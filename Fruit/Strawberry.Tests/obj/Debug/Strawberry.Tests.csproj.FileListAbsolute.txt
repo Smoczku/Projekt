@@ -1,0 +1,5 @@
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\Fruit\Strawberry.Tests\bin\Debug\Strawberry.Tests.dll
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\Fruit\Strawberry.Tests\bin\Debug\Strawberry.Tests.pdb
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\Fruit\Strawberry.Tests\obj\Debug\Strawberry.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\Fruit\Strawberry.Tests\obj\Debug\Strawberry.Tests.dll
+C:\Users\Adrian\Documents\Visual Studio 2013\Projects\Fruit\Strawberry.Tests\obj\Debug\Strawberry.Tests.pdb

@@ -1,0 +1,58 @@
+﻿@model Strawberry.Web.Models.Assignment
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Assignment</h4>
+	<hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Group.ShortName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Group.ShortName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Task.Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Task.Title)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserId)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserId)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Assigned)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Assigned)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AssignmentId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

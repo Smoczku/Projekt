@@ -1,0 +1,57 @@
+﻿@model IEnumerable<Strawberry.Web.Models.Assignment>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Group.ShortName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Task.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UserId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Assigned)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Group.ShortName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Task.Title)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UserId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Assigned)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.AssignmentId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.AssignmentId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.AssignmentId })
+        </td>
+    </tr>
+}
+
+</table>
